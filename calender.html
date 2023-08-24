@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calender</title>
+</head>
+
+<body>
+    <h1 id="header">2023 - January</h1>
+    <table id="calender">
+        <thead>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wendsday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </thead>
+        <tbody id="calendar-body">
+            
+            <!-- This is where your JavaScript will populate the dates -->
+        </tbody>
+    </table>
+    <label for="edt-input">Add Event:</label>
+    <input type="text" name="edt-input" id="edt-input">
+    <div class="controls">
+        <button onclick="backCalender()"> back</button>
+        <button onclick="toggleEdit()" id="edit-btn" class="edit-controls">edit</button>
+        <button onclick="saveChanges()" class="edit-controls">save changes</button>
+        <button onclick="nextCalender()">next</button>
+    </div>
+    
+    <script src="script2.js"></script>
+
+
+</body>
+
+</html>
